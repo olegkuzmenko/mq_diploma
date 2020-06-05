@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff);
+  src: url();
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-family:  "Open Sans", sans-serif; 
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+.welcome {
+  position: relative;
+  background-image: url("../images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #271763;
+  height: 100vh;
+}
+
+.welcome::after {
+  content: "";
+  position: absolute;
+  background-color: #271763;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.welcome__logo_icon {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.welcome__header {
+  position: relative;
+  color: #ffffff;
+  z-index: 2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.welcome__footer {
+  display: block;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+
+.button {
+  box-sizing: border-box;
+  background-color: #573fae;
+  border-radius: 40px; 
+  display: block;
+}
+
+.button__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button__text {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+
+  font-family: "Open Sans";
+  text-transform: uppercase; 
+
+  vertical-align: middle;
+}
+
+.first_line {
+  margin: 0;
+  font-weight: 400;
+}
+
+.second_line {
+  margin: 0;
+  font-weight: 700;
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+}
+
+.section__header {
+  background-color: #ffffff;
+}
+
+.section__title {
+  color: #e7e7e7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__image_athlets, .section__image_players {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.section__article_header {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.section__article_number, .section__article_number_special {
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section__article_number::after, .section__article_number_special::after {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 4px;
+  margin: 0;
+}
+
+.section__article_number::after {
+  background-color: #5e3db3;
+}
+
+.section__article_body_special {
+  color: #ffffff;
+}
+
+.section__article_title {
+  color: #c1c1c1;
+}
+
+.section__article_body, .section__article_body_special {
+  color: #000000;
+}
+
+.section__article_number_special::after {
+  background-color: #ffffff;
+}
+
+
+@media (max-width: 414px) {
+  .welcome__container {
+    padding: 5.6vh 6.25vw 14vh;
+  }
+
+  .welcome__logo_icon {
+    margin: 0 auto 23vh;
+    width: 133px;
+    height: 36px;
+  }
+
+  .welcome__title_first {
+    font-size: 28px;
+    margin-bottom: 4.5vh;
+    line-height: 30px;
+  }
+  
+  .welcome__title_second {
+    font-size: 28px;
+    margin-bottom: 15.5vh;
+    margin-left: 14vw;
+    line-height: 34px;
+  }
+
+  .button {
+    width: 88vw;
+    padding: 1vh 0;
+    margin-bottom: 2.5vh;
+  } 
+
+  .button__structure {
+    margin-left: calc(50% - 55px);
+  }
+
+  .button__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button__text {
+    font-size: 8px;
+    text-align: left;
+    padding-left: 8px;
+  }
+  .section__image_athlets {
+    background-image: url("../images/footballer_566.png");
+    background-position: left 22vw top 80px;
+    background-size: 54vw 87.5vw;
+  }
+  
+  .section__image_players {
+    background-image: url("../images/basketballer_991.png");
+    background-position: left 3.2vw top 80px;
+    background-size: 95vw 79vw;
+  }
+
+  .section__article_connection {
+    padding: 27vw 6.25vw 17vw;
+    background-color: #fafafa;
+  }
+  
+  
+  .section__article_collaboration {
+    padding: 17vw 6.25vw 17vw;
+    background-color: #f5f4f9;
+  }
+  
+  .section__article_growth {
+    padding: 17vw 6.25vw 17vw;
+    background-color: #5e3db3;
+  
+  }
+  
+  .section__title {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 3vw 0 73.4vw 6.25vw;
+    margin: 0;
+  }
+
+  .section__article_title {
+    font-size: 23px;
+    line-height: 28px;
+    padding-left: 3vw;
+    margin: 0;
+  }
+  .section__article_body, .section__article_body_special {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+
+
+  .welcome__container {
+    padding: 3.75vh 12vw 9.4vh;
+  }
+
+  .welcome__logo_icon {
+    margin: 0 auto 20vh;
+    width: 206px;
+    height: 55px;
+  }
+
+  .welcome__title_first {
+    font-size: 64px;
+    margin: 0;
+    line-height: 78px;
+  }
+  
+  .welcome__title_second {
+    font-size: 64px;
+    margin: 0 0 33vh 14vw;
+    line-height: 78px;
+  }
+
+
+  .buttons {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .button {
+    width: 40vw;
+    padding: 16px 0 ;
+  }
+
+  .button:nth-child(n+2) {
+    margin-left: 4vw;
+  }
+
+  .button__structure {
+    text-align: center;
+  }
+
+  .button__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button__text {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 2vw;
+  }
+
+}
+
