@@ -28,7 +28,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-color: #090a36;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .welcome::after, footer::after {
