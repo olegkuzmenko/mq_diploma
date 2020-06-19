@@ -50,14 +50,14 @@ body {
 }
 
 .welcome__logo_icon, 
-.footer__logo_icon, 
+.footer__logo, 
 .footer__logo_icon_bottom {
   position: relative;
   display: block;
   z-index: 2;
 }
 
-.footer__logo_icon {
+.footer__logo {
   background: linear-gradient(180deg, #5e3db3, #3d2976);
 
 }
@@ -235,12 +235,6 @@ p {
 
 
 
-.aside__article_image {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #090a36;
-}
 
 
 .aside__article_title {
@@ -362,19 +356,11 @@ p {
   }
 
   .section__article:nth-child(2) {
-    padding: 27vw 6.25vw 17vw;
+    padding: calc(17vw + 20px) 6.25vw 50px;
   }
   
-  .section__article:nth-child(3) {
-    padding: 17vw 6.25vw 17vw;
-  }
-  
-  .section:first-child .section__article:nth-child(4) {
-    padding: 17vw 6.25vw 17vw;
-  }
-
-  .section:nth-child(2) .section__article:nth-child(4) {
-    padding: 17vw 6.25vw 17vw;
+  .section__article {
+    padding: 54px 6.25vw 50px;
   }
   
   .section__title {
@@ -387,24 +373,20 @@ p {
   .section__article_title {
     font-size: 23px;
     line-height: 28px;
-    margin: 0;
+    margin: 0 0 24px 0;
   }
 
   .section__article_title::before {
     font-size: 14px;
     line-height: 16px;
     padding-right: 3vw;
-    padding-top: 1.3vw;
+    padding-top: 1vw;
   }
 
   .section__article_title::after {
     width: 16px;
     height: 4px;
-    top: 20px;
-  }
-
-  .section__article_title {
-    margin-bottom: 8.75vw;
+    top: calc(1.6vw + 15px);
   }
 
   .section__article_body {
@@ -412,34 +394,23 @@ p {
     line-height: 18px;
   }
 
-  .aside__article_image {
-    padding-bottom: 110vw;
+  .aside__article_image_preview {
+    max-width: 100%;
   }
 
-  .aside__article:nth-child(1) .aside__article_image {
-    background-image: url("../images/be-active_640.jpg");
-  }
-
-  .aside__article:nth-child(2) .aside__article_image {
-    background-image: url("../images/find-contact_640.jpg");
-  }
-
-  .aside__article:nth-child(3) .aside__article_image {
-    background-image: url("../images/work-it_640.jpg");
-  }
 
   .aside__article_content {
     padding-left: 6.25vw;
     padding-right: 6.25vw;
-    margin-bottom: 24vw;
+    margin-bottom: 78px;
   }
 
   .aside__article_title {
     position: relative;
     font-size: 28px;
     line-height: 36px;
-    padding-top: 11vw;
-    margin-bottom: 6.8vw;
+    padding-top: 30px;
+    margin-bottom: 20px;
   }
 
   .aside__article_title::before {
@@ -631,21 +602,10 @@ p {
     line-height: 28px;
   }
 
-  .aside__article_image {
-    padding-bottom: 76vw;
+  .aside__article_image_preview {
+    max-width: 100%;
   }
 
-  .aside__article:nth-child(1) .aside__article_image {
-    background-image: url("../images/be-active_960.jpg");
-  }
-
-  .aside__article:nth-child(2) .aside__article_image {
-    background-image: url("../images/find-contact_960.jpg");
-  }
-
-  .aside__article:nth-child(3) .aside__article_image {
-    background-image: url("../images/work-it_960.jpg");
-  }
 
   .aside__article_content {
     padding-left: 4.1vw;
@@ -826,11 +786,11 @@ p {
 
 
   .section:nth-child(1) .section__article {
-    padding: 3vw 9.4vw 2.4vw 52vw;
+    padding: 56px 9.4vw 56px 52vw;
   }
 
   .section:nth-child(2) .section__article {
-    padding: 3vw 52vw 2.4vw 9.4vw;
+    padding: 56px 52vw 56px 9.4vw;
   }
 
   .section__article_title {
@@ -854,11 +814,15 @@ p {
 
   .aside__article {
     display: flex;
+    align-items: center;
   }
 
   .aside__article_image {
-    padding-bottom: 32.9vw;
-    padding-left: 50vw;
+    font-size: 0;
+  }
+
+  .aside__article_image_preview {
+    max-width: 50vw;
   }
 
   .aside__article:nth-child(even) .aside__article_image {
@@ -870,26 +834,14 @@ p {
     line-height: 28px;
   }
 
-  .aside__article:nth-child(1) .aside__article_image {
-    background-image: url("../images/be-active_1024.jpg");
-  }
-
-  .aside__article:nth-child(2) .aside__article_image {
-    background-image: url("../images/find-contact_1024.jpg");
-  }
-
-  .aside__article:nth-child(3) .aside__article_image {
-    background-image: url("../images/work-it_1024.jpg");
-  }
-
   .aside__article_content {
     box-sizing: border-box;
-    min-width: 50vw;
-    padding: 13.2vw 6vw 13.2vw 9.2vw;
+    width: 50vw;
+    padding: 5vw 6vw 5vw 9.2vw;
   }
 
   .aside__article:nth-child(even) .aside__article_content {
-    padding: 13.2vw 9.2vw 13.2vw 6vw;
+    padding: 5vw 9.2vw 5vw 6vw;
   }
 
   .aside__article_title {
@@ -939,12 +891,18 @@ p {
     margin-right: auto;
   }
 
-  .footer__logo_icon {
+  .footer__logo {
     margin-right: 2vw;
+    padding: 1.2vw 0.7vw 1.2vw;
+    border-radius: 2vw;
+    font-size: 0;
+
+  }
+
+  .footer__logo_icon {
     width: 5.4vw;
     height: 4.5vw;
-    padding: 1.2vw 0.7vw;
-    border-radius: 2vw;
+
   }
 
   .footer__title_first {
